@@ -1,0 +1,148 @@
+\documentclass[handout]{beamer}
+\usepackage[utf8]{inputenc}
+% \usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{multirow}
+\usepackage{fontawesome5}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{graphicx}
+\graphicspath{{./Images/}}
+\newcommand\calculategraphicstargetheight[1]{%
+     \setlength\graphht{\textheight 
+                       -\parskip
+                       -\abovecaptionskip -\belowcaptionskip
+                       -(12pt * #1) % assuming baselineskip of 12pt in caption
+                       }}
+                       
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{multirow}
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+\lstset{
+  basicstyle=\ttfamily,
+  % basicstyle={\small\ttfamily},
+  columns=fullflexible,
+  % columns=flexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+% \usetheme{default}
+% \usetheme{AnnArbor}
+% \usetheme{Antibes}
+% \usetheme{Bergen}
+% \usetheme{Berkeley}
+% \usetheme{Berlin}
+% \usetheme{Boadilla}
+% \usetheme{CambridgeUS}
+% \usetheme{Copenhagen}
+% \usetheme{Darmstadt}
+% \usetheme{Dresden}
+% \usetheme{Frankfurt}
+% \usetheme{Goettingen}
+% \usetheme{Hannover} %%%
+\usetheme{Ilmenau}
+% \usetheme{JuanLesPins}
+% \usetheme{Luebeck}
+% \usetheme{Madrid}
+% \usetheme{Malmoe}
+% \usetheme{Marburg}
+% \usetheme{Montpellier}
+% \usetheme{PaloAlto}
+% \usetheme{Pittsburgh}
+% \usetheme{Rochester}
+% \usetheme{Singapore}
+% \usetheme{Szeged}
+% \usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+% \usecolortheme{albatross}
+\usecolortheme{beaver} %
+% \usecolortheme{beetle}
+% \usecolortheme{crane}
+% \usecolortheme{dolphin}
+% \usecolortheme{dove}
+% \usecolortheme{fly}
+% \usecolortheme{lily}
+% \usecolortheme{orchid}
+% \usecolortheme{rose} % here
+%\usecolortheme{seagull}
+% \usecolortheme{seahorse}
+% \usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+
+
+
+\title{\LaTeX\ \ Introduction}
+\author{Luc Nguyen}
+\date{June 2021}
+\begin{document}
+
+% \begin{frame}{Contents}
+%     \titlepage
+% \end{frame}
+\maketitle
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+
+\input{section1.tex}
+
+% \input{section2.tex}
+ 
+
+
+% { % all template changes are local to this group.
+%     \setbeamertemplate{navigation symbols}{}
+%     \begin{frame}<article:0>[plain]
+%         \begin{tikzpicture}[remember picture,overlay]
+%             \node[at=(current page.center)] {
+%                 \includegraphics[keepaspectratio,
+%                                  width=\paperwidth,
+%                                  height=\paperheight]{NVL_6602_1-3.jpg}
+%             };
+%         \end{tikzpicture}
+%      \end{frame}
+% }
+% 
+
+% \begin{frame}{test}
+% \end{frame}
+\end{document}
+
